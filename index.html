@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Weather APP -->
+    <section class="weatherApp">
+      <h1>Weather</h1>
+      <input type="search" id="searchInput" placeholder="type a city name" />
+      <div class="weatherBtns">
+        <button id="searchBtn">Search</button>
+        <button id="weatherAppClearBtn">Clear</button>
+      </div>
+      <div class="weatherDataField">
+        <h2 id="cityName">City Name</h2>
+        <h2 id="weatherState">Weather State</h2>
+        <h2 class="tempDisplay">Temp: <span id="temp">10.5</span> &#8451;</h2>
+        <h2 class="tempDisplay">
+          Min Temp: <span id="minTemp">9.65</span> &#8451;
+        </h2>
+        <h2 class="tempDisplay max-tem">
+          Max Temp: <span id="maxTemp">10.2</span> &#8451;
+        </h2>
+        <h2 id="moreInfoBtn" type="button">More Information</h2>
+      </div>
+    </section>
+    
+    <!-- More Information Section -->
+    <section class="moreInfoSec" id="moreInfo_Section">
+      <button id="xBtn">X</button>
+      <img src="images/Clear.png" width="100" id="moreInfoImage"/>
+      <div class="moreInfoDiv">
+        <h2>Country: <span id="country"></span></h2>
+        <h2>City Name: <span id="city_name"></span></h2>
+      </div>
+      <div class="moreInfoDiv">
+        <h2 id="weather_state">Weather State</h2>
+        <h2 id="description">Description</h2>
+      </div>
+      <div class="moreInfoDiv">
+        <h2>average Temperature: <span id="average_temp"></span><span class="signs">&#8451;</span></h2>
+        <h2>min Temperature: <span id="min_temp"></span><span class="signs">&#8451;</span></h2>
+        <h2>max Tempreture: <span id="max_temp"></span><span class="signs">&#8451;</span></h2>
+        <h2>Feels like: <span id="feels_like"></span><span class="signs">&#8451;</span></h2>
+        <h2>Humidity: <span id="humidity"></span><span class="signs">&percnt;</span></h2>
+        <h2>Pressure: <span id="pressure"></span><span class="signs">P</span></h2>
+      </div>
+      <div class="moreInfoDiv">
+        <h2>Wind Deg: <span id="windDeg"></span><span class="signs degSign">&deg;</span></h2>
+        <h2>Wind Speed: <span id="windSpeed"></span><span class="signs">m/s</span></h2>
+      </div>
+    </section>
+  </body>
+</html>
